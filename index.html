@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='yes' name='mobile-web-app-capable' />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+    <title>Christian Anthony</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Christian Anthony</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Story </a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Pictures</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <nav>
+        <div class="hitoria">
+            <p>Famous as guitarist, vocalist and drummer for the Australian rock band Chase Atlantic.<br>
+                He participated in the EPs "Nostalgia" and "Dalliance", released by the group on iTunes.</p>
+            <button><a href="#">About</a></button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="informacoes">
+            <h2>Data:</h2>
+            <p>Christian Anthony</p><br>
+            <p>25 anos, Setembro 3, 1997</p><br>
+            <p>Sydney, Austrália</p>
+            <button><a href="#">More information</a></button>
+        </div>
+        <div class="imagem">
+            <img src="imagens/3.jpg" alt="Homem branco, com cabelos longos, usa óculos, roupa preta está tocando guitarra virado levemente para o lado esquerdo.">
+        </div>
+    </section>
+
+    <section class="junto">
+        <div class="imagem4">
+            <img src="imagens/4.jpg" alt="Homem branco, cabelos longos, roupa toda preta, em cima do banco de um carro branco.">
+        </div>
+
+        <div class="descricao">
+            <h2>Description</h2>
+            <p>He and Mitchel Cave formed Chase Atlantic after they ended up as finalists on the<br> X Factor
+                Australian
+                in 2012.
+                His band's YouTube channel has over 1.9 million subscribers and<br>708 million views.<br>
+                He lives in Sydney, Australia. He was raised along with a brother. He had a brief affair<br>with
+                actress Alexa Mansour in 2017. <br>Later, he began a relationship with a model named Casilda.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contact</h2>
+        <ul>
+            <li>(08) 8237 3244</li>
+            <li>Sydney, Austrália</li>
+            <li>@thechristiananthony</li>
+        </ul>
+    </footer>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            if ('serviceWorker' in navigator) {
+                console.log('has serviceworker');
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('serviceWorker.js')
+                        .then((registration) => {
+                            console.log('Service worker registered.', registration);
+                        });
+                });
+    
+            }
+            else {
+                console.log("Your browser not supports serviceWorkers");
+            }
+        });
+    </script>
+</body>
+
+</html>
